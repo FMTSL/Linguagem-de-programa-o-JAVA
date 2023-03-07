@@ -1,6 +1,7 @@
 package encapsulamento;
 
-public class ContaBancaria {
+//Abstração serve para instanciar apenas objetos de conta corrente e poupança
+public abstract class ContaBancaria {
 
 	private int numero;
 	private int agencia;
