@@ -23,5 +23,4 @@ public class TesteConta {
 		contaCorrente1.sacar(50);
 		System.out.println("Saldo por saque " + contaCorrente1.getSaldo());
 	}
-
 }
