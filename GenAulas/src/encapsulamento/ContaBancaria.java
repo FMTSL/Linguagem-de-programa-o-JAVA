@@ -8,7 +8,18 @@ public class ContaBancaria {
 	private String titular;
 	private float saldo;
 	
-	//Metodos acessores da classe conta bancaria
+	//Métodos construtor da conta bancaria
+		public ContaBancaria(int numero, int agencia, String tipo, String titular, float saldo) {
+			this.numero=numero;
+			this.agencia=agencia;
+			this.tipo=tipo;
+			this.titular=titular;
+			this.saldo=saldo;
+		}
+		
+		public ContaBancaria() {}
+	
+	//Métodos acessores da classe conta bancaria
 	public int getNumero() {
 		return numero;
 	}
@@ -38,6 +49,20 @@ public class ContaBancaria {
 	}
 	public void setSaldo(float saldo) {
 		this.saldo = saldo;
+	}
+	
+	public boolean sacar(float valor) {
+		if(this.getSaldo() < saldo) {
+			System.out.println("\n Saldo insuficiente para saque");
+			return false;
+		}
+		
+		this.setSaldo(this.getSaldo() - valor);
+		return true;
+	}
+	
+	public void depositar(float valorDepositado) {
+		this.setSaldo(this.getSaldo() + valorDepositado);
 	}
 		
 }
