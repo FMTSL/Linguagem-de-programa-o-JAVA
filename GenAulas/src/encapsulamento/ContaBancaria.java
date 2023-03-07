@@ -8,7 +8,7 @@ public class ContaBancaria {
 	private String titular;
 	private float saldo;
 	
-	//Métodos construtor da conta bancaria
+	//Métodos construtor da contaBancaria
 		public ContaBancaria(int numero, int agencia, String tipo, String titular, float saldo) {
 			this.numero=numero;
 			this.agencia=agencia;
@@ -19,7 +19,7 @@ public class ContaBancaria {
 		
 		public ContaBancaria() {}
 	
-	//Métodos acessores da classe conta bancaria
+	//Métodos acessores da classe contaBancaria
 	public int getNumero() {
 		return numero;
 	}

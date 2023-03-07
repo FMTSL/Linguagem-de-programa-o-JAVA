@@ -1,5 +1,6 @@
 package encapsulamento;
 
+//Herança
 public class ContaCorrente extends ContaBancaria {
 	
 	private float limite;
